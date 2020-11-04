@@ -24,8 +24,10 @@ public class GroceryList {
     public String toString(){
         String gList="Grocery List: ";
         for (int i=0; i<arr.length; i++){
-            gList+=arr[i]+" ";
+            if(arr[i]!=null){
+                gList+=arr[i]+", ";
+            }
         }
-        return gList;
+        return gList.substring(0,gList.length()-2);
     }
 }
