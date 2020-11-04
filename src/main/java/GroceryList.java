@@ -20,6 +20,10 @@ public class GroceryList {
         }
     }
     public String toString(String item){
-        return item;
+        String gList="Grocery List: ";
+        for (int i=0; i<arr.length; i++){
+            gList+=arr[i]+"";
+        }
+        return gList;
     }
 }
